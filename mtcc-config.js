@@ -3,5 +3,5 @@
    - ถ้าเว้นว่าง: เว็บแสดงรายชื่อ Mentor ชุดเดิม และปุ่มสมัครไปที่ Google Form เดิม
    - ถ้าใส่แล้ว: รายชื่อ Mentor ดึงจากระบบอัตโนมัติ และปุ่มสมัครไปที่ My MTCC */
 window.MTCC_CONFIG = {
-  portal_url: 'https://script.google.com/macros/s/AKfy...ยาว.../exec'
+  portal_url: ''
 };
