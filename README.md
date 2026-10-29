@@ -25,3 +25,10 @@ Add file → Upload files → ลากไฟล์ที่แก้ทับ�
 ## ให้ Google เจอเว็บ
 Google Search Console → Add property → URL prefix → https://mtcareerconnect.github.io/
 → ยืนยันด้วยไฟล์ HTML (อัปโหลดลง repo นี้) → Sitemaps → ใส่ `sitemap.xml` → Submit
+
+## เชื่อมกับ My MTCC (รายชื่อ Mentor อัตโนมัติ)
+
+แก้ไฟล์ `mtcc-config.js` ไฟล์เดียว: ใส่ลิงก์ Web app ของ My MTCC ใน `portal_url`
+
+- เว้นว่าง: หน้า Mentor แสดงรายชื่อชุดเดิมในไฟล์ และปุ่มสมัครไปที่ Google Form เดิม
+- ใส่แล้ว: หน้า Mentor ดึงรายชื่อจากระบบทุกครั้งที่เปิด (Mentor ที่ยินยอมและทีมอนุมัติแล้ว + โปรไฟล์แบบจำลองที่ยังไม่ได้ลบ) และปุ่มสมัครทุกปุ่มไปที่ My MTCC
