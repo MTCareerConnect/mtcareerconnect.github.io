@@ -124,7 +124,7 @@ details summary{cursor:pointer;font-weight:600}
     if(k==='withSuccessHandler')return function(f){ok=f;return p;};
     if(k==='withFailureHandler')return function(f){fail=f;return p;};
     return function(){var a=[].slice.call(arguments);call(k,a).then(function(r){if(ok)ok(r);},function(e){if(fail)fail(e);});};}});return p;}
-  var q={};new URLSearchParams(location.search).forEach(function(v,k){q[k]=v;});
+  var q={start:'mentee'};new URLSearchParams(location.search).forEach(function(v,k){q[k]=v;});
   window.google={script:{get run(){return runner();},url:{getLocation:function(cb){cb({parameter:q});}}}};
 })();
 
@@ -541,7 +541,7 @@ async function busy(btn, fn) {
 function setState(st) {
   PT.st = st;
   const roles = [st.mentee && 'mentee', st.mentor && 'mentor'].filter(Boolean);
-  if (!PT.role || (!roles.includes(PT.role) && roles.length)) PT.role = roles[0] || PT.params.start || null;
+  PT.role = 'mentee';
 }
 
 /* ---------- boot / sign in ---------- */
